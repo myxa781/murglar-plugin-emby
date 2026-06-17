@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Если вам не нужно открывать ссылки из браузера/других приложений —
+    можно оставить только <manifest/> без intent-filter.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name="com.badmanners.murglar.plugin.LinkRedirectActivity"
+            android:exported="true">
+            <!--
+                Emby не имеет фиксированного домена (у каждого свой сервер),
+                поэтому intent-filter здесь не нужен.
+                Открытие по ссылке в плагине не поддерживается намеренно.
+            -->
+        </activity>
+    </application>
+</manifest>
